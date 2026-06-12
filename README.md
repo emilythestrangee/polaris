@@ -12,9 +12,7 @@ Every existing safety app fails for the same reason. They are reactive. They req
 
 ---
 
-## Innovation Category
-
-Edge-First with AI-Native components.
+## Innovation Category: Edge-First with AI-Native components
 
 Critical safety features run entirely on-device with zero cloud dependency. TFLite sound classification, accelerometer crash detection, and Google Activity Recognition API all process data locally. This means Polaris functions even with no signal — exactly when and where safety matters most. Intelligence is not a feature layer added on top. It is the core mechanism driving mode detection, threat classification, danger scoring, and escalation logic.
 
@@ -35,11 +33,11 @@ Critical safety features run entirely on-device with zero cloud dependency. TFLi
 
 Polaris operates across three intelligent modes from the moment a session begins. The user sets it once and the app takes over completely.
 
-**Walk and Run Mode** monitors route, movement speed, and ETA in the background. Any deviation from the planned path, unexpected stop, or missed check-in triggers the escalation ladder automatically. No phone interaction needed after session start.
+**Walk and Run Mode**: monitors route, movement speed, and ETA in the background. Any deviation from the planned path, unexpected stop, or missed check-in triggers the escalation ladder automatically. No phone interaction needed after session start.
 
-**Drive Mode** monitors for crash signatures via accelerometer, tracks route deviation, and supports ride-share passenger safety. Alerts escalate through the phone and optionally through Bluetooth car speakers or Android Auto display.
+**Drive Mode**: monitors for crash signatures via accelerometer, tracks route deviation, and supports ride-share passenger safety. Alerts escalate through the phone and optionally through Bluetooth car speakers or Android Auto display.
 
-**Idle Mode** monitors ambient sound passively via an on-device TFLite classifier, keeps the check-in timer active, and listens for silent SOS triggers when the user is stationary somewhere unfamiliar or uncomfortable.
+**Idle Mode**: monitors ambient sound passively via an on-device TFLite classifier, keeps the check-in timer active, and listens for silent SOS triggers when the user is stationary somewhere unfamiliar or uncomfortable.
 
 At any point, regardless of active mode, a triple volume press or sharp shake silently activates SOS. From that moment the evidence locker begins recording, GPS logs continuously, and the escalation ladder activates.
 
@@ -59,7 +57,7 @@ At any point, regardless of active mode, a triple volume press or sharp shake si
 ## Core Features
 
 ### Safety Circle
-Trusted contacts see live status badges in real time — Safe, Walking, Driving, Idle, Needs Check-in. Location sharing with visibility controls — full location, area only, or status only. Circle invites via QR code or shareable link. Ghost mode for temporary invisibility. Scheduled sharing activates location only during set hours. Emergency contacts outside the circle as a backup escalation layer.
+Trusted contacts see live status badges in real-time (Safe, Walking, Driving, Idle, Needs Check-in). Location sharing with visibility controls — full location, area only, or status only. Circle invites via QR code or shareable link. Ghost mode for temporary invisibility. Scheduled sharing activates location only during set hours. Emergency contacts outside the circle as a backup escalation layer.
 
 ### Walk and Run Mode
 Journey mode with destination and ETA tracking running entirely in the background. Route deviation alert fires if the user strays from the planned path. Unfamiliar zone awareness via geofencing activates heightened monitoring when the user leaves known areas. Low battery warning notifies the circle automatically when battery drops below 15 percent during an active session. Last known location saves final GPS coordinates to Firebase if the phone dies mid-journey.
@@ -111,27 +109,30 @@ A nearby stranger can scan a QR code displayed on the lock screen to access a li
 
 ## Technology Stack
 
-**Frontend**
-Flutter and Dart: single codebase for Android and iOS
+###Frontend
+Flutter and Dart
 
-**Backend**
-Firebase: API-First architecture via Firebase REST and Realtime APIs
-Cloud Functions: server-side escalation logic and check-in timer triggers
 
-**Data Layer**
+###Backend
+**Firebase** API-First architecture via Firebase REST and Realtime APIs
+**Cloud Functions**: server-side escalation logic and check-in timer triggers
+
+
+###Data Layer
 Firebase Realtime Database: live safety circle status and GPS sync
 Firestore: user accounts, session history, heatmap reports, circle relationships
 Firebase Storage: audio recordings, photo evidence, GPS trail logs
 Firebase Auth: phone number authentication
 
-**AI and Edge Components**
+
+###AI and Edge Components
 Google ML Kit: face mesh for drowsiness detection
 TensorFlow Lite: on-device sound classification and sign language gesture recognition
 Google Activity Recognition API: on-device mode detection via built-in phone sensors
 sensors_plus: accelerometer and gyroscope for crash detection and gait analysis
 
-**Key Packages**
 
+###Key Packages
 flutter_background_service, geolocator, flutter_background_location, flutter_volume_controller, record, camera, flutter_contacts, google_maps_flutter, flutter_activity_recognition, battery_plus, permission_handler, flutter_local_notifications, flutter_blue_plus, go_router, provider
 
 ---
