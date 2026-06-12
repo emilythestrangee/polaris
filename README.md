@@ -112,25 +112,26 @@ A nearby stranger can scan a QR code displayed on the lock screen to access a li
 ## Technology Stack
 
 **Frontend**
-Flutter and Dart — single codebase for Android and iOS
+Flutter and Dart: single codebase for Android and iOS
 
 **Backend**
-Firebase — API-First architecture via Firebase REST and Realtime APIs
-Cloud Functions — server-side escalation logic and check-in timer triggers
+Firebase: API-First architecture via Firebase REST and Realtime APIs
+Cloud Functions: server-side escalation logic and check-in timer triggers
 
 **Data Layer**
-Firebase Realtime Database — live safety circle status and GPS sync
-Firestore — user accounts, session history, heatmap reports, circle relationships
-Firebase Storage — audio recordings, photo evidence, GPS trail logs
-Firebase Auth — phone number authentication
+Firebase Realtime Database: live safety circle status and GPS sync
+Firestore: user accounts, session history, heatmap reports, circle relationships
+Firebase Storage: audio recordings, photo evidence, GPS trail logs
+Firebase Auth: phone number authentication
 
 **AI and Edge Components**
-Google ML Kit — face mesh for drowsiness detection
-TensorFlow Lite — on-device sound classification and sign language gesture recognition
-Google Activity Recognition API — on-device mode detection via built-in phone sensors
-sensors_plus — accelerometer and gyroscope for crash detection and gait analysis
+Google ML Kit: face mesh for drowsiness detection
+TensorFlow Lite: on-device sound classification and sign language gesture recognition
+Google Activity Recognition API: on-device mode detection via built-in phone sensors
+sensors_plus: accelerometer and gyroscope for crash detection and gait analysis
 
 **Key Packages**
-flutter_background_service, geolocator, flutter_background_location, flutter_volume_controller, flutter_callkit_incoming, record, camera, flutter_contacts, google_maps_flutter, flutter_activity_recognition, battery_plus, permission_handler, flutter_local_notifications, flutter_blue_plus, go_router, provider
+
+flutter_background_service, geolocator, flutter_background_location, flutter_volume_controller, record, camera, flutter_contacts, google_maps_flutter, flutter_activity_recognition, battery_plus, permission_handler, flutter_local_notifications, flutter_blue_plus, go_router, provider
 
 ---
