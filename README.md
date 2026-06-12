@@ -109,23 +109,23 @@ A nearby stranger can scan a QR code displayed on the lock screen to access a li
 
 ## Technology Stack
 
-###Frontend
+### Frontend
 Flutter and Dart
 
 
-###Backend
+### Backend
 **Firebase** API-First architecture via Firebase REST and Realtime APIs
 **Cloud Functions**: server-side escalation logic and check-in timer triggers
 
 
-###Data Layer
+### Data Layer
 Firebase Realtime Database: live safety circle status and GPS sync
 Firestore: user accounts, session history, heatmap reports, circle relationships
 Firebase Storage: audio recordings, photo evidence, GPS trail logs
 Firebase Auth: phone number authentication
 
 
-###AI and Edge Components
+### AI and Edge Components
 Google ML Kit: face mesh for drowsiness detection
 TensorFlow Lite: on-device sound classification and sign language gesture recognition
 Google Activity Recognition API: on-device mode detection via built-in phone sensors
